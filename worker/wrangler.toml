@@ -5,13 +5,13 @@ compatibility_date = "2025-01-01"
 # Non-secret config. Set CORS_ORIGIN to your Cloudflare Pages URL
 # (comma-separated for several origins).
 [vars]
-CORS_ORIGIN = "http://localhost:3000"
+CORS_ORIGIN = "http://localhost:3000,https://biglyp-task-manager-ewg.pages.dev"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "biglyp-tasks-db"
 # Replace with the id printed by `wrangler d1 create biglyp-tasks-db`
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "79c282ff-a747-457f-b3d6-498bf093a7d4"
 migrations_dir = "drizzle"
 
 # JWT_SECRET is NOT stored here. Set it with:
